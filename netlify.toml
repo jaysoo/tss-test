@@ -1,5 +1,5 @@
 [build]
-  command = "npm --prefix my-workspace run build"
+  command = "cd my-workspace && npx nx run-many -t build"
   publish = "my-workspace/dist"
 
 [functions]
