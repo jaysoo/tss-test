@@ -1,6 +1,6 @@
 [build]
-  command = "cd my-workspace && npx nx run-many -t build"
-  publish = "my-workspace/dist"
+  command = "cd my-workspace && npx nx build my-workspace"
+  publish = "my-workspace/dist/apps/my-workspace"
 
 [functions]
   directory = "my-workspace/.netlify/functions"
