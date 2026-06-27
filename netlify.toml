@@ -1,0 +1,12 @@
+[build]
+  base = "my-workspace"
+  command = "npx nx build my-workspace"
+  publish = "dist/apps/my-workspace/.output/public"
+
+[functions]
+  directory = "dist/apps/my-workspace/.netlify/functions"
+
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
