@@ -1,9 +1,10 @@
 [build]
-  command = "cd my-workspace && npx nx build my-workspace"
-  publish = "my-workspace/dist/apps/my-workspace/.output/public"
+  base = "my-workspace"
+  command = "npx nx build my-workspace"
+  publish = "dist/apps/my-workspace/.output/public"
 
 [functions]
-  directory = "my-workspace/dist/apps/my-workspace/.netlify/functions"
+  directory = "dist/apps/my-workspace/.netlify/functions"
 
 [[redirects]]
   from = "/*"
